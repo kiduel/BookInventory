@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.kidus11.bookinventory.MainActivity">
+    <item
+        android:id="@+id/action_insert_sample_book"
+        android:orderInCategory="100"
+        android:title="@string/add_sample_book"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="#ECEFF1">
+
+        <ImageView
+            android:id="@+id/book_cover_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:src="@mipmap/ic_launcher_round"
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Camino Island"/>
+
+            <TextView
+                android:id="@+id/author_tv"
+                android:paddingTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:text="John Grisham"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quantity_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="#CFD8DC"
+            android:textSize="18sp"
+            tools:text="18"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="0.3"
+            android:background="#B0BEC5"
+            android:src="@drawable/shopping_cart"
+            android:scaleType="fitCenter"
+            />
+
+    </LinearLayout>

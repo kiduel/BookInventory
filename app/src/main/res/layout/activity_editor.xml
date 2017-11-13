@@ -1,0 +1,288 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        tools:context="com.example.kidus11.bookinventory.EditorActivity">
+
+        <TextView
+            android:id="@+id/title_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/book_info"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/book_title"
+                android:textSize="20sp"
+                android:paddingRight="12dp"
+                android:paddingEnd="12dp"/>
+
+            <EditText
+                android:id="@+id/book_title_editor"
+                android:layout_width="200dp"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="@string/author"
+                android:textSize="20sp"
+                android:paddingRight="12dp"
+                android:paddingEnd="12dp"/>
+
+            <EditText
+                android:id="@+id/book_author_editor"
+                android:layout_width="200dp"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="@string/pages"
+                android:textSize="20sp"
+                android:paddingRight="12dp"
+                android:paddingEnd="12dp"/>
+
+            <EditText
+                android:id="@+id/page_editor"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="@string/edition"
+                android:textSize="20sp"
+                android:paddingRight="12dp"
+                android:paddingEnd="12dp"/>
+
+            <EditText
+                android:id="@+id/edition_editor"
+                android:layout_width="100dp"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="@string/price"
+                android:textSize="20sp"
+                android:paddingRight="12dp"
+                android:paddingEnd="12dp"/>
+
+            <EditText
+                android:id="@+id/price_editor"
+                android:layout_width="80dp"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/genre_editor"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingStart="40dp"
+                android:text="@string/genre"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/genre_editor_spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/upload_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="65dp"
+                android:layout_marginStart="65dp"
+                android:text="@string/upload_button"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/bookImage"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="0.25"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icons_upload" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/subtitle"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="@string/publisher"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/publisher_editor"
+                android:layout_width="250dp"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="fill_vertical"
+            android:text="@string/quantity"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/editor_increase"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/increase" />
+
+            <EditText
+                android:id="@+id/quantity_editor"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/editor_decrease"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/decrease" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="fill_vertical"
+                android:text="@string/supplier"
+                android:textSize="15sp"
+                android:paddingRight="12dp"
+                android:paddingEnd="12dp"/>
+
+            <EditText
+                android:id="@+id/supplier_phone_edit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/order_by_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/phone_button" />
+
+    </LinearLayout>
+</ScrollView>
